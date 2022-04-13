@@ -1,15 +1,22 @@
-import React from 'react'
-import './notification.css'
+import React from "react";
+import { useSelector } from "react-redux";
+import { Alert } from "react-bootstrap";
 
-const Notification = ({ message }) => {
-  if (message === null) {
-    return null
+const Notification = () => {
+  const message = useSelector((state) => state.notification.message);
+  if (message === "") {
+    return "";
   }
-  return (
-    <div className='message'>
-      {message}
-    </div>
-  )
-}
 
-export default Notification
+  const alertStyle = {
+    textAlign: "center",
+  };
+
+  return (
+    <Alert style={alertStyle} variant="success">
+      {message}
+    </Alert>
+  );
+};
+
+export default Notification;

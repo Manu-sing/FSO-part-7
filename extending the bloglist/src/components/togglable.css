@@ -1,26 +1,25 @@
 .new-blog-btn-container,
 .close-blog-btn-container {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .new-blog-btn {
-    color: rgb(18, 18, 201);
-    background-color: transparent;
-    font-size: 22px;
+  color: rgb(18, 18, 201);
+  background-color: transparent;
+  font-size: 22px;
 }
 
 .close-blog-btn {
-    padding: 2px 6px;
+  padding: 2px 6px;
 }
 
 .close-blog-btn:hover {
-    background-color: rgb(156, 183, 233);
+  background-color: rgb(156, 183, 233);
 }
 
 .new-blog-btn:hover {
-    background-color: rgb(193, 235, 220);
+  background-color: rgb(193, 235, 220);
 }
-

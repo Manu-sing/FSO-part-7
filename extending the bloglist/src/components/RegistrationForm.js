@@ -1,15 +1,24 @@
-import React from 'react'
-import './form.css'
+import React from "react";
+import "./form.css";
 
-const RegistrationForm = ({ handleRegistration, usernameForRegistration, handleUsernameForRegistration, nameForRegistration, handleNameForRegistration, passwordForRegistration, handlePasswordForRegistration }) => {
+const RegistrationForm = ({
+  handleRegistration,
+  usernameForRegistration,
+  handleUsernameForRegistration,
+  nameForRegistration,
+  handleNameForRegistration,
+  passwordForRegistration,
+  handlePasswordForRegistration,
+}) => {
   return (
-    <div className='registrationForm-container'>
+    <div className="registrationForm-container">
       <h1>Sign-in here:</h1>
-      <div className='registrationForm-body'>
+      <div className="registrationForm-body">
         <form onSubmit={handleRegistration}>
           <div>
-              USERNAME <input
-              id='usernameForRegistration'
+            USERNAME{" "}
+            <input
+              id="usernameForRegistration"
               type="text"
               value={usernameForRegistration}
               name="usernameForRegistration"
@@ -17,8 +26,9 @@ const RegistrationForm = ({ handleRegistration, usernameForRegistration, handleU
             />
           </div>
           <div>
-              NAME <input
-              id='nameForRegistration'
+            NAME{" "}
+            <input
+              id="nameForRegistration"
               type="text"
               value={nameForRegistration}
               name="nameForRegistration"
@@ -26,19 +36,26 @@ const RegistrationForm = ({ handleRegistration, usernameForRegistration, handleU
             />
           </div>
           <div>
-              PASSWORD <input
-              id='passwordForRegistration'
+            PASSWORD{" "}
+            <input
+              id="passwordForRegistration"
               type="passwordForRegistration"
               value={passwordForRegistration}
               name="passwordForRegistration"
               onChange={handlePasswordForRegistration}
             />
           </div>
-          <button id='registration-button' className='registration-btn' type="submit">Sign-in</button>
+          <button
+            id="registration-button"
+            className="registration-btn"
+            type="submit"
+          >
+            Sign-in
+          </button>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RegistrationForm
+export default RegistrationForm;
